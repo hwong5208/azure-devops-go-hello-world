@@ -1,0 +1,22 @@
+trigger:
+  - master
+
+pool:
+  name: 'default'
+
+steps:
+  - task: GoTool@0
+    inputs:
+      version: '1.21'
+    displayName: 'Install Go 1.21'
+
+  - script: |
+      go version
+      go build -o hello.exe
+    displayName: 'Build Go application'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathToPublish: '$(Build.ArtifactStagingDirectory)'
+      artifactName: 'go-hello-world'
+    displayName: 'Publish artifacts'
