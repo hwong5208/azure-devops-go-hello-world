@@ -6,10 +6,6 @@ A production-ready demonstration of **Azure DevOps YAML pipeline orchestration**
 
 ---
 
-*This README was created with assistance from Claude Code, Anthropic's CLI for software engineering tasks.*
-
----
-
 ## Key DevOps Competencies Demonstrated
 
 ### Azure DevOps & YAML Pipeline Development
@@ -137,39 +133,6 @@ go build -o hello.exe
 
 ---
 
----
-
-## Resources & References
-
-- **Azure DevOps Pipeline Documentation**: [Microsoft Learn - YAML Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema)
-- **Go Language**: [golang.org](https://golang.org)
-- **Self-Hosted Agents**: [Azure DevOps Agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents)
-- **Kubernetes & Containers**: [Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/)
-
----
-
-## Interview Talking Points
-
-1. **Self-Hosted Agent Pool**
-   - Uses local agent pool (`default`) instead of Azure-hosted agents
-   - Demonstrates understanding of agent configuration in Azure DevOps
-   - Shows how to manage builds on company infrastructure
-
-2. **Pipeline as Code**
-   - YAML configuration is version-controlled with source code
-   - Easy to modify and track changes to build process
-   - Automated trigger on master branch commits
-
-3. **Go Build Process**
-   - Explicit version management (Go 1.21)
-   - Automated executable compilation
-   - Cross-platform binary output (hello.exe)
-   - Artifact publishing for downstream use
-
----
-
 ## Author
 
-Built to showcase practical Azure DevOps expertise for enterprise DevOps engineering roles.
-
-**Tech Stack**: Azure DevOps, Golang 1.21, YAML, Self-Hosted Agents, Artifact Management
+**Tech Stack**: Azure DevOps, Golang 1.21, YAML, Self-Hosted Agents, Artifact Management, Claude code
